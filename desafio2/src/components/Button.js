@@ -5,9 +5,8 @@ export default function Button(props) {
     }
     
     return (
-        <>
-            <button onClick={handleClick} >{props.text}</button>
-        </>
+
+            <button type="btn" class="btn btn-primary btn-nav" onClick={handleClick} >{props.text}</button>
     )
 }
 

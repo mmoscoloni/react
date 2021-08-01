@@ -2,6 +2,50 @@
   text-align: center;
 }
 
+/* NAVBAR */
+
+.column-category {
+  
+}
+
+.column-brand {
+/*   margin: 10px;
+ */}
+
+.brand-title {
+  text-decoration: none;
+}
+
+.brand-title:hover {
+  text-decoration: none;
+  color:white;
+}
+
+.btn-nav {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: brown;
+  border-color: brown;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.row-category {
+  background-color: brown;
+  padding: 10px;
+
+}
+
+.brand-title {
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
