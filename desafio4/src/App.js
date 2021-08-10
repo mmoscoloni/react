@@ -1,22 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
+import NavBar from './components/Navbar';
 
 function App() {
-  
-  const [time, setTime] = useState(0)
-
-  useEffect(() => {
-    setInterval(() => {
-      setTime(prevTime => prevTime + 1)
-    }, 1000)
-  }, []
-  
-  )
-
   return (
     <>
-        <div>{time}</div>
+      <NavBar></NavBar>
+{/*       <ItemListContainer name="¡Hola!"></ItemListContainer>
+ */}      <ItemCount></ItemCount>
     </>
   );
 }
