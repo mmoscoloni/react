@@ -4,12 +4,6 @@ export default function ItemCount({ stock, initial, onAdd }) {
 
     const [count, setCount] = useState(initial)
 
-    const handleStock = () => {
-        if (stock > count) {
-            console.log("mayor")
-        }
-    }
-
     return (
         <>
             <div class="row  item-row">
