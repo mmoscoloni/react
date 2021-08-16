@@ -4,8 +4,18 @@
 
 /* ITEM COUNT */
 
+.boton-add {
+  border-color: transparent;
+  padding: 0px !important;
+  margin-top: 10px;
+}
+
+.container-add {
+  padding-left: 0px;
+}
+
 .number {
-  width: 60px;
+  width: 90px;
   text-align: center;
 }
 

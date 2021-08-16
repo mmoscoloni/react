@@ -5,11 +5,16 @@ import ItemCount from './components/ItemCount';
 import NavBar from './components/Navbar';
 
 function App() {
+
+  const handleAdd = (count) => {
+    console.log(count)
+  }
+
   return (
     <>
       <NavBar></NavBar>
 {/*       <ItemListContainer name="¡Hola!"></ItemListContainer>
- */}      <ItemCount></ItemCount>
+ */}      <ItemCount stock={5} initial={1} onAdd={handleAdd} ></ItemCount>
     </>
   );
 }
