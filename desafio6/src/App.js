@@ -3,6 +3,7 @@ import './App.css';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import NavBar from './components/Navbar';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
 
@@ -13,8 +14,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <ItemListContainer></ItemListContainer>
-      <ItemCount stock={5} initial={1} onAdd={handleAdd} ></ItemCount>
+      <ItemDetailContainer></ItemDetailContainer>
     </>
   );
 }
