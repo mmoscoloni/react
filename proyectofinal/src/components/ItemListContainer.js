@@ -4,8 +4,6 @@ import { useParams } from "react-router"
 
 const ItemListContainer = (props) => {
 
-    const {categoria, id} = useParams()
-
     return (
         
         <div class="row">

@@ -1,9 +1,12 @@
 import data from "../data/data";
 import Item from "./Item";
 import React, {useEffect, useState} from 'react'
+import { useParams } from "react-router"
+
 
 const ItemList = () => {
     
+    const {categoria} = useParams()
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     
@@ -17,11 +20,18 @@ const ItemList = () => {
         }
         
         products().then((items) => {
+            if (categoria != null) {
+                const filterProducts = items.filter((product) =>  product.categoria === categoria)            
+                setProducts(filterProducts)
+                setLoading(false)
+           } else {
             setProducts(items)
             setLoading(false)
+           }
+
         })
 
-    }, [])
+    }, [categoria])
     
     return (
         <>

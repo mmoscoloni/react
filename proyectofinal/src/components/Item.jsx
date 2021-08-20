@@ -7,7 +7,7 @@ const handleAdd = (count) => {
 
 const Item = ({  title, description, price, imagen, stock, categoria, id }) => {
     return (
-            <Link to={`/${categoria}/${id}`}>
+            <Link to={`/item/${id}`}>
                 <div class="card product-container">
                     <img src={imagen} class="card-img-top" alt="" />
                     <div class="card-body">

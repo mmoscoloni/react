@@ -10,10 +10,10 @@ export default function NavBar() {
             </div>
             
             <div class="column-category col-6">
-                <Link to="/matematica"><Button text="Matematica"></Button></Link>
-                <Link to="/quimica"><Button text="Quimica"></Button></Link>
-                <Button text="Fisica"></Button>
-                <Button text="Algebra"></Button>
+                <Link to="/category/matematica"><Button text="Matematica"></Button></Link>
+                <Link to="/category/quimica"><Button text="Quimica"></Button></Link>
+                <Link to="/category/fisica"><Button text="Fisica"></Button></Link>
+                <Link to="/category/algebra"><Button text="Algebra"></Button></Link>
             </div>
 
             <div class="column-cart col-1">

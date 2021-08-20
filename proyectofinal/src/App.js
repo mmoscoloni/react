@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemList from './components/ItemList';
 
 function App() {
 
@@ -18,15 +19,15 @@ function App() {
         <NavBar></NavBar>
         <Switch>
           <Route path="/" exact>
-            <ItemListContainer titulo="Home"></ItemListContainer>
+            <ItemListContainer></ItemListContainer>
           </Route>
 
           <Route path="/item/:id" exact>
-            <ItemDetailContainer titulo="Matematica"></ItemDetailContainer>
-          </Route>
+            <ItemDetailContainer></ItemDetailContainer>
+          </Route> 
 
-          <Route path="/category/:id" exact>
-            <ItemListContainer titulo="Matematica"></ItemListContainer>
+          <Route path="/category/:categoria/" exact>
+            <ItemList></ItemList>
           </Route>
           
         </Switch>

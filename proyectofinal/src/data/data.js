@@ -6,7 +6,7 @@ const data = [
         price: '1200',
         categoria: 'matematica',
         stock: '5',
-        imagen: "matematica.jpg",
+        imagen: "/matematica.jpg",
     },
 
     {
@@ -16,7 +16,7 @@ const data = [
         price: '1200',
         categoria: 'quimica',
         stock: '4',
-        imagen: 'quimica.jpg'
+        imagen: '/quimica.jpg'
     },
 
     {
@@ -26,7 +26,27 @@ const data = [
         price: '1000',
         categoria: 'matematica',
         stock: '8',
-        imagen: 'matematica.jpg'
+        imagen: '/matematica.jpg'
+    },
+
+    {
+        id: '4',
+        title: 'Curso Fisica: MRU',
+        description: '¡Aprende Fisica con este curso!',
+        price: '1000',
+        categoria: 'fisica',
+        stock: '8',
+        imagen: '/fisica.jpeg'
+    },
+
+    {
+        id: '5',
+        title: 'Curso Algebra: Matrices',
+        description: '¡Aprende Matrices con este curso!',
+        price: '2000',
+        categoria: 'algebra',
+        stock: '10',
+        imagen: '/algebra.jpg'
     },
 ]
 
