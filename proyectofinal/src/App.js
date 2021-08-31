@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import ItemListContainer from './components/ItemListContainer';
+import Cart from './components/Cart'
+import {CartProvider} from "./context/CartContext";
 import NavBar from './components/Navbar';
 import {
   BrowserRouter,
@@ -14,6 +16,7 @@ import ItemList from './components/ItemList';
 function App() {
 
   return (
+    <CartProvider>
     <BrowserRouter>
       <div>
         <NavBar></NavBar>
@@ -29,10 +32,15 @@ function App() {
           <Route path="/category/:categoria/" exact>
             <ItemList></ItemList>
           </Route>
+
+          <Route path="/cart" exact>
+              <Cart></Cart>
+          </Route>
           
         </Switch>
       </div>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

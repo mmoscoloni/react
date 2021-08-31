@@ -6,11 +6,9 @@ import { useParams } from "react-router"
 
 const ItemDetailContainer = () => {
     
-    const [product, setProduct] = useState([])
+    const {categoria} = useParams()
+    const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-
-    const {id} = useParams()
-
     
     useEffect(() => {
         const products = () => {
@@ -22,26 +20,27 @@ const ItemDetailContainer = () => {
         }
         
         products().then((items) => {
-            const product = items.find((product => product.id === id))
-
-            setProduct(product)
+            if (categoria != null) {
+                const filterProducts = items.filter((product) =>  product.categoria === categoria)            
+                setProducts(filterProducts)
+                setLoading(false)
+           } else {
+            setProducts(items)
             setLoading(false)
+           }
+
         })
 
-    }, [])
+    }, [categoria])
     
     return (
         <>
             {loading ? <h2>Cargando Productos...</h2> : 
+            products.map((product) => 
             <div class="col-2">
-                <ItemDetail
-                stock={product.stock} 
-                imagen={product.imagen} 
-                title={product.title} 
-                price={product.price} 
-                description={product.description}></ItemDetail>
+                <ItemDetail key={product.id} objeto={product}></ItemDetail>
             </div>
-            }
+            )}
         </>
     )
 }

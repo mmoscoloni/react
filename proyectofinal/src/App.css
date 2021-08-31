@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.bloque-producto {
+  margin: 5rem
+}
+
+.btn-carrito {
+  margin: 10px
+}
+
+.carrito-title {
+  margin: 10px;
+}
+
 /* VISTA PRODUCTO */
 
 .product-container {
