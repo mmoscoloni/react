@@ -11,7 +11,7 @@ import { useCart } from "../context/CartContext";
 
 const ItemDetail = ({ objeto }) => {
 
-    const {addItem, products} = useCart()
+    const {addItem} = useCart()
     
     const [itemCountVisible, setItemCountVisible] = useState(true)
     const [finishBuyVisible, setFinisBuyVisible] = useState(true)
