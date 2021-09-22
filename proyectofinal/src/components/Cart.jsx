@@ -1,6 +1,7 @@
 import React, {useEffect} from "react"
 import {Link} from "react-router-dom";
 import {useCart} from '../context/CartContext'
+import OrderForm from './OrderForm'
 
 function CartPrueba() {
 
@@ -27,6 +28,9 @@ function CartPrueba() {
                 <div className="contenedor-pagar-vaciar">
                     <button className="btn-carrito btn btn-primary">Avanzar con el pago</button>
                     <button className="btn-carrito btn btn-primary" onClick={() => clear(products.elem)}>Vaciar carrito</button>
+                    <div className="contenedor-pagar-vaciar">
+                    <OrderForm/>
+                </div>
                 </div>
             </> : 
                 <>

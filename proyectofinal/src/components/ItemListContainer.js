@@ -6,7 +6,7 @@ const ItemListContainer = (props) => {
 
     return (
         
-        <div class="row">
+        <div class="row content">
             <h1>{props.titulo}</h1>
             <ItemList></ItemList>
         </div>

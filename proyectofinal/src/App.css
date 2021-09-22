@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+.boton-add-container {
+  text-align:center;
+}
+
+.payment {
+  margin: 2rem;
+}
+
+.id-fecha {
+  font-weight: 800;
+}
+
+.pago-realizado {
+  font-size: 2rem !important;
+}
+
+.contenedor-input {
+  width: 120px
+}
+
+.content {
+  place-content: center;
+}
+
 .bloque-producto {
   margin: 5rem
 }
@@ -18,6 +42,10 @@
 
 .product-container {
   width: 20rem;
+}
+
+.product-container {
+  margin: 3rem; 
 }
 
 .product-price {

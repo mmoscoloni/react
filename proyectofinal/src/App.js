@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemList from './components/ItemList';
+import Payment from "./components/Payment"
+
 
 function App() {
 
@@ -29,12 +31,16 @@ function App() {
             <ItemDetailContainer></ItemDetailContainer>
           </Route> 
 
-          <Route path="/category/:categoria/" exact>
+          <Route path="/categoria/:categoria/" exact>
             <ItemList></ItemList>
           </Route>
 
           <Route path="/cart" exact>
               <Cart></Cart>
+          </Route>
+
+          <Route exact path="/cart/payment">
+                        <Payment/>
           </Route>
           
         </Switch>
